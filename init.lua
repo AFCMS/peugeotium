@@ -243,3 +243,14 @@ mcl_armor.register_set({
 	sound_equip = "mcl_armor_equip_diamond",
 	sound_unequip = "mcl_armor_unequip_diamond",
 })
+
+awards.register_achievement("peugeotium:peugeotium", {
+	title = S("Peugeotium!"),
+	description = S("Mine a Peugotium mineral."),
+	icon = "peugeotium_peugeotium_ore.png",
+	trigger = {
+		type = "dig",
+		item = "peugeotium:stone_with_peugeotium",
+		target = 1,
+	},
+})
